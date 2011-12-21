@@ -1,0 +1,543 @@
+100
+200
+192.168.1.
+PING 192.168.1.100 (192.168.1.100) 56(84) bytes of data.
+
+--- 192.168.1.100 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.039/0.039/0.039/0.000 ms
+wynik: 0
+ROW: 1
+PING 192.168.1.178 (192.168.1.178) 56(84) bytes of data.
+
+--- 192.168.1.178 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.188 (192.168.1.188) 56(84) bytes of data.
+
+--- 192.168.1.188 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.176 (192.168.1.176) 56(84) bytes of data.
+
+--- 192.168.1.176 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.198 (192.168.1.198) 56(84) bytes of data.
+
+--- 192.168.1.198 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.177 (192.168.1.177) 56(84) bytes of data.
+
+--- 192.168.1.177 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.170 (192.168.1.170) 56(84) bytes of data.
+
+--- 192.168.1.170 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.125 (192.168.1.125) 56(84) bytes of data.
+
+--- 192.168.1.125 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.166 (192.168.1.166) 56(84) bytes of data.
+
+--- 192.168.1.166 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.134 (192.168.1.134) 56(84) bytes of data.
+
+--- 192.168.1.134 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.135 (192.168.1.135) 56(84) bytes of data.
+
+--- 192.168.1.135 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.140 (192.168.1.140) 56(84) bytes of data.
+
+--- 192.168.1.140 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.179 (192.168.1.179) 56(84) bytes of data.
+
+--- 192.168.1.179 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.138 (192.168.1.138) 56(84) bytes of data.
+
+--- 192.168.1.138 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.163 (192.168.1.163) 56(84) bytes of data.
+
+--- 192.168.1.163 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.187 (192.168.1.187) 56(84) bytes of data.
+
+--- 192.168.1.187 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.111 (192.168.1.111) 56(84) bytes of data.
+
+--- 192.168.1.111 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.119 (192.168.1.119) 56(84) bytes of data.
+
+--- 192.168.1.119 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.128 (192.168.1.128) 56(84) bytes of data.
+
+--- 192.168.1.128 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.121 (192.168.1.121) 56(84) bytes of data.
+
+--- 192.168.1.121 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.159 (192.168.1.159) 56(84) bytes of data.
+
+--- 192.168.1.159 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.183 (192.168.1.183) 56(84) bytes of data.
+
+--- 192.168.1.183 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.162 (192.168.1.162) 56(84) bytes of data.
+
+--- 192.168.1.162 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.154 (192.168.1.154) 56(84) bytes of data.
+
+--- 192.168.1.154 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.151 (192.168.1.151) 56(84) bytes of data.
+
+--- 192.168.1.151 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.117 (192.168.1.117) 56(84) bytes of data.
+
+--- 192.168.1.117 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.103 (192.168.1.103) 56(84) bytes of data.
+
+--- 192.168.1.103 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.157 (192.168.1.157) 56(84) bytes of data.
+
+--- 192.168.1.157 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.102 (192.168.1.102) 56(84) bytes of data.
+
+--- 192.168.1.102 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.101 (192.168.1.101) 56(84) bytes of data.
+
+--- 192.168.1.101 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.196 (192.168.1.196) 56(84) bytes of data.
+
+--- 192.168.1.196 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.155 (192.168.1.155) 56(84) bytes of data.
+
+--- 192.168.1.155 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.153 (192.168.1.153) 56(84) bytes of data.
+
+--- 192.168.1.153 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.113 (192.168.1.113) 56(84) bytes of data.
+
+--- 192.168.1.113 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.167 (192.168.1.167) 56(84) bytes of data.
+
+--- 192.168.1.167 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.130 (192.168.1.130) 56(84) bytes of data.
+
+--- 192.168.1.130 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.165 (192.168.1.165) 56(84) bytes of data.
+
+--- 192.168.1.165 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.171 (192.168.1.171) 56(84) bytes of data.
+
+--- 192.168.1.171 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.148 (192.168.1.148) 56(84) bytes of data.
+
+wynik: 256
+PING 192.168.1.158 (192.168.1.158) 56(84) bytes of data.
+
+--- 192.168.1.158 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.184 (192.168.1.184) 56(84) bytes of data.
+
+--- 192.168.1.184 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+--- 192.168.1.148 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.136 (192.168.1.136) 56(84) bytes of data.
+
+--- 192.168.1.136 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.160 (192.168.1.160) 56(84) bytes of data.
+
+--- 192.168.1.160 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.131 (192.168.1.131) 56(84) bytes of data.
+
+--- 192.168.1.131 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.180 (192.168.1.180) 56(84) bytes of data.
+
+--- 192.168.1.180 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.191 (192.168.1.191) 56(84) bytes of data.
+
+--- 192.168.1.191 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.164 (192.168.1.164) 56(84) bytes of data.
+
+--- 192.168.1.164 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.127 (192.168.1.127) 56(84) bytes of data.
+
+--- 192.168.1.127 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.139 (192.168.1.139) 56(84) bytes of data.
+
+--- 192.168.1.139 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+PING 192.168.1.147 (192.168.1.147) 56(84) bytes of data.
+
+--- 192.168.1.147 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.175 (192.168.1.175) 56(84) bytes of data.
+
+--- 192.168.1.175 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.173 (192.168.1.173) 56(84) bytes of data.
+
+--- 192.168.1.173 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.133 (192.168.1.133) 56(84) bytes of data.
+
+--- 192.168.1.133 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.107 (192.168.1.107) 56(84) bytes of data.
+
+--- 192.168.1.107 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.108 (192.168.1.108) 56(84) bytes of data.
+
+--- 192.168.1.108 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.104 (192.168.1.104) 56(84) bytes of data.
+
+--- 192.168.1.104 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.126 (192.168.1.126) 56(84) bytes of data.
+
+--- 192.168.1.126 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.114 (192.168.1.114) 56(84) bytes of data.
+
+--- 192.168.1.114 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.194 (192.168.1.194) 56(84) bytes of data.
+
+--- 192.168.1.194 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.182 (192.168.1.182) 56(84) bytes of data.
+
+--- 192.168.1.182 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 63ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+PING 192.168.1.185 (192.168.1.185) 56(84) bytes of data.
+
+--- 192.168.1.185 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.181 (192.168.1.181) 56(84) bytes of data.
+
+--- 192.168.1.181 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.152 (192.168.1.152) 56(84) bytes of data.
+
+--- 192.168.1.152 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.115 (192.168.1.115) 56(84) bytes of data.
+
+--- 192.168.1.115 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.146 (192.168.1.146) 56(84) bytes of data.
+
+--- 192.168.1.146 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.142 (192.168.1.142) 56(84) bytes of data.
+
+--- 192.168.1.142 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.189 (192.168.1.189) 56(84) bytes of data.
+
+--- 192.168.1.189 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.168 (192.168.1.168) 56(84) bytes of data.
+
+--- 192.168.1.168 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.106 (192.168.1.106) 56(84) bytes of data.
+
+--- 192.168.1.106 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.143 (192.168.1.143) 56(84) bytes of data.
+
+--- 192.168.1.143 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.197 (192.168.1.197) 56(84) bytes of data.
+
+--- 192.168.1.197 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.16wynik: 256
+PING 192.168.1.129 (192.168.1.129) 56(84) bytes of data.
+
+--- 192.168.1.129 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+PING 192.168.1.156 (192.168.1.156) 56(84) bytes of data.
+
+--- 192.168.1.156 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+PING 192.168.1.105 (192.168.1.105) 56(84) bytes of data.
+
+--- 192.168.1.105 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.132 (192.168.1.132) 56(84) bytes of data.
+
+--- 192.168.1.132 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.112 (192.168.1.112) 56(84) bytes of data.
+
+--- 192.168.1.112 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.174 (192.168.1.174) 56(84) bytes of data.
+
+--- 192.168.1.174 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.193 (192.168.1.193) 56(84) bytes of data.
+
+--- 192.168.1.193 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+PING 192.168.1.149 (192.168.1.149) 56(84) bytes of data.
+
+--- 192.168.1.149 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+PING 192.168.1.150 (192.168.1.150) 56(84) bytes of data.
+
+--- 192.168.1.150 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+PING 192.168.1.192 (192.168.1.192) 56(84) bytes of data.
+
+--- 192.168.1.192 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+PING 192.168.1.137 (192.168.1.137) 56(84) bytes of data.
+
+--- 192.168.1.137 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.120 (192.168.1.120) 56(84) bytes of data.
+
+--- 192.168.1.120 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+PING 192.168.1.190 (192.168.1.190) 56(84) bytes of data.
+
+--- 192.168.1.190 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.199 (192.168.1.199) 56(84) bytes of data.
+
+--- 192.168.1.199 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.169 (192.168.1.169) 56(84) bytes of data.
+
+--- 192.168.1.169 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.123 (192.168.1.123) 56(84) bytes of data.
+
+--- 192.168.1.123 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 192.168.1.161 (192.168.1.161) 56(84) bytes of data.
+
+--- 192.168.1.161 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
+wynik: 256
