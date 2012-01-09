@@ -53,10 +53,6 @@ void MainWindow::show_hide(QSystemTrayIcon::ActivationReason dana)
 
 void MainWindow::ustaw(QString adres, int i)
 {
-	while (!Mutex::tryLock())
-	{
-	}
-
 	int ob = adresy_obecnosc[adres];
 	if (ob != i)
 	{
@@ -87,15 +83,37 @@ void MainWindow::ustaw(QString adres, int i)
 			QList<QTableWidgetItem *> lista = ui->tableWidget->findItems(adres,
 					Qt::MatchContains);
 
-			int row = ui->tableWidget->row(lista[0]);
-			ui->tableWidget->removeRow(row);
+			if (lista.size() > 0) {
+				int row = ui->tableWidget->row(lista[0]);
+				ui->tableWidget->removeRow(row);
 
-			/*konczenie watku sprawdzającego hosta*/
-			hosty[adres]->quit();
+				/*konczenie watku sprawdzającego hosta*/
+				hosty[adres]->quit();
+			}
 		}
 	}
+	else if (i == 0)
+	{
+		QList<QTableWidgetItem *> lista = ui->tableWidget->findItems(adres,
+				Qt::MatchContains);
 
-	Mutex::unlock();
+		qDebug()<<"lista->size(): "<<QString::number(lista.size())<<"\n";
+
+		if (lista.size() > 0) {
+			int row = ui->tableWidget->row(lista[0]);
+			QTableWidgetItem *item = ui->tableWidget->item(row, 0);
+			std::string str = item->text().toStdString();
+			qDebug()<<"Tekst: "<<item->text()<<"\nAdres: "<<adres<<"\n";
+
+			if (item->text() == adres) {
+				QHostInfo info = QHostInfo::fromName(adres);
+				qDebug()<<"Host name: "<<info.hostName()<<"\n";
+				if (info.hostName() != adres) {
+					item->setText(info.hostName());
+				}
+			}
+		}
+	}
 }
 
 void MainWindow::changeEvent(QEvent *e)
@@ -128,7 +146,7 @@ void MainWindow::on_pushButton_clicked()
 
 	s = new Start(&list, &adresy_obecnosc, ui->tableWidget,
 			ui->lineEdit->text(), ui->lineEdit_2->text(), this);
-	s->start();
+	s->startThread();
 }
 
 void MainWindow::closeAllThreads(bool notify)
@@ -240,6 +258,11 @@ Start::Start(QList<Ping*> *list, QMap<QString, int> *adresy_obecnosc,
 	this->mainW = mainW;
 }
 
+void Start::startThread()
+{
+	start();
+}
+
 void Start::run()
 {
 	while (!Mutex::tryLock())
@@ -299,23 +322,14 @@ void Start::run()
 		std::cout << podstawa.toStdString() << std::endl;
 		std::cout << "List.size:" << list->size() << std::endl;
 
-		for (int i = 0; i < stop - start; i++)
-		{
-			list->push_back(
-					new Ping(5, podstawa + QString::number((start + i))));
+		for (int i = 0; i < stop - start; i++) {
+			Ping *p = new Ping(5, podstawa + QString::number((start + i)));
+			list->push_back(p);
+			connect(p, SIGNAL(dane(QString,int)), mainW,
+					SLOT(ustaw(QString,int)));
+			msleep(100);
+			p->start();
 			(*adresy_obecnosc)[podstawa + QString::number((start + i))] = 256;
-		}
-		for (int i = 0; i < stop - start; i++)
-		{
-			QListIterator<Ping *> iter(*list);
-
-			while (iter.hasNext())
-			{
-				Ping *p = iter.next();
-				connect(p, SIGNAL(dane(QString,int)), mainW,
-						SLOT(ustaw(QString,int)));
-				p->start();
-			}
 		}
 	}
 

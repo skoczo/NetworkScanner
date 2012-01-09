@@ -19,6 +19,7 @@
 #include <QTableWidgetItem>
 #include <QIcon>
 #include <QVector>
+#include <QRunnable>
 #include "MessageObject.h"
 #include "MessageFlow.h"
 #include "ping.h"
@@ -58,6 +59,7 @@ public:
 	Start(QList<Ping*> *list, QMap<QString, int> *adresy_obecnosc,
 			QTableWidget *table, QString poczatek, QString koniec, MainWindow *mainW);
 	void run();
+	void startThread();
 };
 
 class MainWindow: public QMainWindow
