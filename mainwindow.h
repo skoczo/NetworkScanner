@@ -34,11 +34,11 @@ class MainWindow;
 class Clean: public QThread
 {
 private:
-	QList<Ping*> list;
+	QList<Ping*> *list;
 	bool isNotify;
 
 public:
-	Clean(QList<Ping*> l, bool isNotify);
+	Clean(QList<Ping*> *l, bool isNotify);
 	void run();
 };
 
@@ -92,6 +92,7 @@ private:
 	bool is_visible;
 	QMessageBox *message;
 	void closeAllThreads(bool notify);
+	void blockButtons(bool block);
 
 public slots:
     void ustaw(QString adres, int i);

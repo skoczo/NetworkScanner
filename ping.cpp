@@ -1,5 +1,6 @@
 #include "ping.h"
 
+
 Ping::Ping(int d, QString a)
 {
     if(d<=0)
@@ -10,8 +11,15 @@ Ping::Ping(int d, QString a)
     petla=true;
 }
 
+bool Ping::isS = true;
+QMutex* Ping::m = new QMutex();
+
 Ping::~Ping()
 {
+	if(!isFinished())
+	{
+		terminate();
+	}
     qDebug()<<"delete ping object";
 }
 
@@ -22,7 +30,7 @@ void Ping::run()
     int r=rand()%9000;
     usleep(r);
    // std::cout<<r<<std::endl;
-    while(petla)
+    while(Ping::isStarted())
     {
         wynik=system(("ping "+adres+" -c 1 -q -W 1").toLatin1().data());
         std::cout<<"wynik: "<<wynik<<std::endl;

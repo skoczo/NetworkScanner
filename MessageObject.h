@@ -20,7 +20,7 @@ private:
 	bool block;
 
 public:
-	MessageObject(int, QString, bool);
+	MessageObject(int icon, QString message, bool isBlocking);
 	int getIcon(){return icon;}
 	QString getMessage(){return message;}
 	bool isBlocking(){return block;}

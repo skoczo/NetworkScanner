@@ -144,9 +144,15 @@ void MainWindow::on_pushButton_clicked()
 		delete s;
 	}
 
+	Ping::setStarted(true);
+	MessageFlow *message = MessageFlow::getInstance();
+	message->sendMessage(new MessageObject(0, "Startowanie wątków", true));
+
 	s = new Start(&list, &adresy_obecnosc, ui->tableWidget,
 			ui->lineEdit->text(), ui->lineEdit_2->text(), this);
-	s->startThread();
+	s->start();
+
+	message->sendMessage(new MessageObject(0, "Wątki wystartowane", false));
 }
 
 void MainWindow::closeAllThreads(bool notify)
@@ -168,7 +174,7 @@ void MainWindow::closeAllThreads(bool notify)
 					qDebug() << "thread is not stopped";
 			}
 		}
-		c = new Clean(list, notify);
+		c = new Clean(&list, notify);
 		c->start();
 }
 
@@ -177,33 +183,27 @@ void MainWindow::stop()
 	closeAllThreads(true);
 }
 
-void MainWindow::showInfo(MessageObject* m)
-{
-	if (m->getIcon() == 0)
-	{
-		if (message != NULL)
-		{
+void MainWindow::showInfo(MessageObject* m) {
+	if (m->getIcon() == 0) {
+		if (message != NULL) {
 			message->close();
 			delete (message);
 		}
 		message = new QMessageBox(QMessageBox::Information, "Informacja",
 				m->getMessage(), QMessageBox::Ok, this, Qt::Dialog);
-		if (m->isBlocking())
-		{
-			message->setWindowModality(Qt::ApplicationModal);
-			message->exec();
-		}
-		else
-		{
-			message->setWindowModality(Qt::NonModal);
-			message->setModal(false);
-			message->show();
-		}
-
+		message->setWindowModality(Qt::ApplicationModal);
+		message->show();
+		blockButtons(m->isBlocking());
 	}
 }
 
-Clean::Clean(QList<Ping*> l, bool isNotify)
+void MainWindow::blockButtons(bool block)
+{
+	ui->pushButton->setEnabled(!block);
+	ui->zakoncz->setEnabled(!block);
+}
+
+Clean::Clean(QList<Ping*> *l, bool isNotify)
 {
 	list = l;
 	this->isNotify = isNotify;
@@ -215,16 +215,17 @@ void Clean::run()
 	MessageFlow::getInstance()->sendMessage(
 			new MessageObject(0, "Kończenie pracy wątków", true));
 
+	Ping::setStarted(false);
+
 	while (!Mutex::tryLock())
 	{
 	}
 
-	for (int i = 0; i < list.size(); i++)
+	for (int i = 0; i < list->size(); i++)
 	{
-		Ping *p = list.at(i);
-		p->terminate();
+		Ping *p = list->at(i);
 		qDebug() << "try to stop thread";
-
+		p->terminate();
 		srand( time(NULL));
 		for (int retries = 0; retries < 100 && !p->isFinished(); retries++)
 		{
@@ -235,15 +236,25 @@ void Clean::run()
 			qDebug() << "thread is stopped";
 		else
 			qDebug() << "thread is not stopped";
+
+		//delete(p);
 	}
 
-	list.clear();
+	qDebug()<<"#################";
+	for (int i = 0; i < list->size(); i++)
+	{
+		qDebug() << i << " "<< list->at(i)->isFinished();
+	}
+	qDebug()<<"#################";
 
+	list->clear();
+
+	qDebug()<<"list->size() "<< list->size();
 	Mutex::unlock();
 
 	if(isNotify)
 	MessageFlow::getInstance()->sendMessage(
-			new MessageObject(0, "Zamykanie wątków udane", true));
+			new MessageObject(0, "Zamykanie wątków udane", false));
 }
 
 Start::Start(QList<Ping*> *list, QMap<QString, int> *adresy_obecnosc,
@@ -273,6 +284,7 @@ void Start::run()
 	{
 		table->removeRow(i);
 	}
+	Ping::setStarted(true);
 
 	QString tmp;
 	int kropki = 0;
